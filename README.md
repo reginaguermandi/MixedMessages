@@ -15,3 +15,6 @@ Every time a user runs the program, a new and random excuse is generate, feel fr
 + Run Javascript files with Node.js.
 + Better understanding how manipulate the DOM. 
 
+## View Program
+
+https://reginaguermandi.github.io/MixedMessages/
