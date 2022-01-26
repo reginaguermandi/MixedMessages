@@ -9,12 +9,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 5em;
+
 }
 
 header h1 {
     padding: 1.5em;
     text-transform: uppercase;
     font-size: xx-large;
+    font-family: 'Bungee', cursive;
 }
 
 /* From cssbuttons.io by @Cevorob */
@@ -77,16 +79,25 @@ button span {
     z-index: 3;
     position: relative;
     font-weight: 600;
+    font-family: 'Antic', sans-serif;
 }
 
-.nick-container {
-    background: url('./images/blob-3.svg') no-repeat;
-    background-size: auto;
-    background-position: center;
-}
-
-#nickname {
-    color: #fff8dc;
+.container {
+    width: 50%;
     margin: 5em;
-    padding: 5em;
+    background: #051937;
+    border-radius: 30% 70% 39% 61% / 30% 58% 42% 70%;
+}
+
+.container p {
+    display: flex;
+    justify-content: center;
+    padding: 2.5em;
+    font-family: 'Antic', sans-serif;
+    color: cornsilk;
+}
+
+footer p {
+    font-size: .5em;
+    margin-top: 7em;
 }
