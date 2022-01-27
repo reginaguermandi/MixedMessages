@@ -7,20 +7,17 @@ const excuses = {
     delay: ["just shit the bed.", "died in front of me.", "won't stop telling me knock knock jokes.", "is having a nervous breakdown.", "gave me syphilis.", "poured lemonade in my gas tank.", "stabbed me.", "found my box of human teeth.", "stole my shoes.", "posted my nudes on Instagram." ]
 };
 
-// Select a random string of each array
+// Get a random string of an array.
 const randomElement = (arr) => {
     let random = arr[Math.floor(Math.random() * arr.length)];
         return random;
 };
 
-//console.log(randomElement(excuses.intro));
-
+// Get a String of each array and put a together
 const randomExcuse = () => {
     const parts = ['intro', 'scapegoat', 'delay']; // in order within the message
     const message = parts.map((part) => randomElement(excuses[part])).join(' ');
         excuse.innerHTML = message;
 };
-
- //console.log(randomExcuse());
 
 button.onclick = randomExcuse;
