@@ -8,24 +8,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 8em;
+    background-color: #080808;
 
 }
 
-header h1 {
-    padding: 1.5em;
+span {
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
-    font-size: xx-large;
-    font-family: 'Bungee', cursive;
+    margin-top: 1em;
+    font-family: 'Smooch Sans', sans-serif, serif;
+    letter-spacing: 2px;
+    color: #00C6CF;
 }
 
 /* From cssbuttons.io by @Cevorob */
 button {
     position: relative;
-    height: 50px;
+    display: block;
+    margin: -20px auto;
+    height: 40px;
     padding: 0 30px;
-    border: 2px solid #000;
-    background: #e8e8e8;
+    border: 2px solid #00C6CF;
+    background: #080808;
+    color: #00C6CF;
     user-select: none;
     white-space: nowrap;
     transition: all .05s linear;
@@ -38,7 +45,7 @@ button:before,
 button:after {
     content: "";
     position: absolute;
-    background: #e8e8e8;
+    background: #080808;
     transition: all .2s linear;
 }
 
@@ -75,7 +82,7 @@ button:hover:after {
 }
 
 button span {
-    font-size: 15px;
+    font-size: 12px;
     z-index: 3;
     position: relative;
     font-weight: 600;
@@ -83,23 +90,28 @@ button span {
 }
 
 .container {
-    width: 50%;
+    width: 40%;
+    height: auto;
     margin: 5em;
-    background: #051937;
-    border-radius: 30% 70% 39% 61% / 30% 58% 42% 70%;
+    background: #333333;
+    border-radius: 10px;
 }
 
 .container p {
     display: flex;
     justify-content: center;
-    padding: 2.5em;
-    font-family: 'Antic', sans-serif;
-    color: cornsilk;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #fff;
 }
 
 footer p {
     font-size: .5em;
-    margin-top: 7em;
+    margin-top: 17em;
+    color: #fff;
 }
 
 @media only screen and (max-width: 480px) {
@@ -111,7 +123,5 @@ footer p {
     .container {
         width: 100%;
         margin: 5em;
-        background: #051937;
-        border-radius: 30% 70% 39% 61% / 30% 58% 42% 70%;
     }
 }
